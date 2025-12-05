@@ -352,6 +352,13 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  AntiAD:
+    url: https://anti-ad.net/clash.yaml
+    path: ./ruleset/AntiAD.yaml
+    behavior: domain
+    interval: 86400
+    format: yaml
+    type: http
   UnBan:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/UnBan.list
     path: ./ruleset/UnBan.list
@@ -559,6 +566,7 @@ rule-providers:
 rules:
   - "RULE-SET,LocalAreaNetwork,全球直连"
   - "RULE-SET,UnBan,全球直连"
+  - "RULE-SET,AntiAD,广告拦截"
   - "RULE-SET,BanAD,广告拦截"
   - "RULE-SET,BanProgramAD,应用净化"
   - "RULE-SET,GoogleFCM,谷歌FCM"
