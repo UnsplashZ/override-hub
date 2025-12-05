@@ -11,7 +11,6 @@ proxy-groups:
       - 美国节点
       - 韩国节点
       - 手动切换
-      - 链式代理
       - 负载均衡-US
       - Kitty
       - Bigme
@@ -307,12 +306,6 @@ proxy-groups:
     strategy: consistent-hashing
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
-  - name: 链式代理
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Switch.png
-    type: relay
-    proxies:
-      - 日本节点
-      - 负载均衡-US
   - name: GLOBAL
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
     include-all: true
@@ -321,7 +314,6 @@ proxy-groups:
       - 节点选择
       - 手动切换
       - 自动选择
-      - 链式代理
       - 负载均衡-US
       - Kitty
       - Bigme
