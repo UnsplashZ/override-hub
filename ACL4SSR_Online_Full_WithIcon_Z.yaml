@@ -443,6 +443,13 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  Gemini:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Gemini.list
+    path: ./ruleset/Gemini.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
   NetEaseMusic:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/NetEaseMusic.list
     path: ./ruleset/NetEaseMusic.list
