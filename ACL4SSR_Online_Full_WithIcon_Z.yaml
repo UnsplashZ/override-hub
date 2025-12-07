@@ -11,7 +11,6 @@ proxy-groups:
       - 美国节点
       - 韩国节点
       - 手动切换
-      - 负载均衡-US
       - Kitty
       - Bigme
       - 备用
@@ -54,6 +53,7 @@ proxy-groups:
       - 美国节点
       - 韩国节点
       - AI专用
+      - 备用
       - 手动切换
       - DIRECT
   - name: 油管视频
@@ -306,19 +306,11 @@ proxy-groups:
     include-all: true
     filter: 备用
     type: select
-  - name: 负载均衡-US
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Speedtest.png
-    include-all: true
-    filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|America
-    type: load-balance
-    strategy: consistent-hashing
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
   - name: AI专用
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
     type: relay
     proxies:
-      - 负载均衡-US
+      - 手动切换
       - 自建
   - name: GLOBAL
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
@@ -328,7 +320,6 @@ proxy-groups:
       - 节点选择
       - 手动切换
       - 自动选择
-      - 负载均衡-US
       - Kitty
       - Bigme
       - 自建
