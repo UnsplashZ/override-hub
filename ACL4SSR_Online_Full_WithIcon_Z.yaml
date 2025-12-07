@@ -14,6 +14,8 @@ proxy-groups:
       - 负载均衡-US
       - Kitty
       - Bigme
+      - 备用
+      - AI专用
       - DIRECT
   - name: 手动切换
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
@@ -51,6 +53,7 @@ proxy-groups:
       - 日本节点
       - 美国节点
       - 韩国节点
+      - AI专用
       - 手动切换
       - DIRECT
   - name: 油管视频
@@ -298,6 +301,11 @@ proxy-groups:
     include-all: true
     filter: ^B-
     type: select
+  - name: 自建
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/MY.png
+    include-all: true
+    filter: 备用
+    type: select
   - name: 负载均衡-US
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Speedtest.png
     include-all: true
@@ -306,6 +314,12 @@ proxy-groups:
     strategy: consistent-hashing
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
+  - name: AI专用
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
+    type: relay
+    proxies:
+      - 负载均衡-US
+      - 自建
   - name: GLOBAL
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
     include-all: true
@@ -317,6 +331,8 @@ proxy-groups:
       - 负载均衡-US
       - Kitty
       - Bigme
+      - 自建
+      - AI专用
       - 电报消息
       - OpenAi
       - 油管视频
