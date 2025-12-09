@@ -457,6 +457,13 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  Claude:
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/Claude.list
+    path: ./ruleset/Gemini.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
   NetEaseMusic:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/NetEaseMusic.list
     path: ./ruleset/NetEaseMusic.list
@@ -593,6 +600,7 @@ rules:
   - "RULE-SET,Telegram,电报消息"
   - "RULE-SET,OpenAi,OpenAi"
   - "RULE-SET,Gemini,OpenAi"
+  - "RULE-SET,Claude,OpenAi"
   - "DOMAIN,aistudio.google.com,OpenAi"
   - "RULE-SET,NetEaseMusic,网易音乐"
   - "RULE-SET,Epic,游戏平台"
