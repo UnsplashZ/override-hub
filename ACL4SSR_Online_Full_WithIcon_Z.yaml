@@ -52,8 +52,6 @@ proxy-groups:
       - 日本节点
       - 美国节点
       - 韩国节点
-      - AI专用
-      - 备用
       - 手动切换
       - DIRECT
   - name: 油管视频
@@ -295,23 +293,21 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/X.png
     include-all: true
     filter: ^K-
-    type: select
+    type: url-test
+    interval: 300
+    tolerance: 50
   - name: Bigme
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Xbox.png
     include-all: true
     filter: ^B-
-    type: select
+    type: url-test
+    interval: 300
+    tolerance: 50
   - name: 自建
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/MY.png
     include-all: true
     filter: 备用
     type: select
-  - name: AI专用
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
-    type: relay
-    proxies:
-      - 手动切换
-      - 自建
   - name: GLOBAL
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
     include-all: true
