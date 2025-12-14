@@ -14,7 +14,6 @@ proxy-groups:
       - Kitty
       - Bigme
       - 备用
-      - AI专用
       - DIRECT
   - name: 手动切换
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
