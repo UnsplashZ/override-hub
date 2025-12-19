@@ -13,8 +13,6 @@ proxy-groups:
       - 手动切换
       - Kitty
       - Bigme
-      - 备用
-      - 中转
       - DIRECT
   - name: 手动切换
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
@@ -303,17 +301,6 @@ proxy-groups:
     type: url-test
     interval: 60
     tolerance: 20
-  - name: 自建
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/MY.png
-    include-all: true
-    filter: 备用
-    type: select
-  - name: 中转
-    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/MY.png
-    type: relay
-    proxies: 
-      - Kitty
-      - 备用
   - name: GLOBAL
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Global.png
     include-all: true
@@ -324,8 +311,6 @@ proxy-groups:
       - 自动选择
       - Kitty
       - Bigme
-      - 自建
-      - 中转
       - 电报消息
       - OpenAi
       - 油管视频
